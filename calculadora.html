@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora sin script</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculadora">
+    <form method="GET" action="/calcular">
+      <input type="number" name="a" step="any" required placeholder="Primer número">
+
+      <select name="op" required>
+        <option value="+">+</option>
+        <option value="-">−</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+      </select>
+
+      <input type="number" name="b" step="any" required placeholder="Segundo número">
+
+      <button type="submit">=</button>
+    </form>
+  </main>
+</body>
+</html>
